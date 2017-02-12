@@ -11,17 +11,17 @@ Author: DAV 2017
 #include <math.h>
 
 void hillshade(float altitude, float azimuth, float z_factor, \
-		const int m, const int n,\
-		float **RasterData, float **Hillshade, \
-		float NoDataValue, \
-                float DataResolution)
+        const int m, const int n,\
+        float **RasterData, float **Hillshade, \
+        float NoDataValue, \
+        float DataResolution)
 /* altitude, float and z_factor are parameters to create the hillshade
  m and n are the rows and cols
- float **RasterData is a pointer to a pointer of type double...(input raster)
+ float **RasterData is a pointer to a pointer of type float...(input raster)
  float **Hillshade is the output array (hillshade)
 */
 {
-    printf("Hillshading with altitude %f, azimuth: %f, and z-factor: %f \n", \
+    printf("Hillshading with altitude: %f, azimuth: %f, and z-factor: %f \n", \
            altitude, azimuth, z_factor);
 
     /* convert zenith and azimuth into radians for calculation */
