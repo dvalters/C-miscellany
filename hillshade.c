@@ -21,7 +21,7 @@ void hillshade(float altitude, float azimuth, float z_factor, \
  float **Hillshade is the output array (hillshade)
 */
 {
-    printf(Ḧillshading with altitude %d, azimuth: %d, and z-factor: %d \n", \
+    printf("Hillshading with altitude %d, azimuth: %d, and z-factor: %d \n", \
            altitude, azimuth, z_factor)
 
     /* convert zenith and azimuth into radians for calculation */
